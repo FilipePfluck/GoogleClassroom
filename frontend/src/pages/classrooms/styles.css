@@ -1,0 +1,235 @@
+.classroomsContainer{
+  margin-left: 0px;
+  background-color: #fff;
+  transition: 0.2s;
+}
+
+.darkClassroomsContainer{
+  margin-left: 0px;
+  filter: brightness(80%);
+  background-color: #fff;
+  transition: 0.2s;
+  height: 100%;
+}
+
+.empty_classroom_list{
+  width: 100%;
+  text-align: center;
+  padding: 25px;
+  font-size: 24px;
+}
+
+
+/* Header */
+
+header{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #DADCE0;
+  padding: 18px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+header p{
+  color: #3C4043;
+  font-size: 20px;
+}
+
+header img{
+  margin: 0;
+  margin-right: 5px;
+}
+
+header section{
+  display:flex;
+  align-items: center;
+}
+
+header button{
+  margin-right: 20px;
+  margin-left: 20px;
+  border: 0;
+  background-color: transparent;
+}
+
+header button:hover{
+  filter: brightness(80%);
+}
+
+
+
+.logoHeader {
+  height: 25px;
+}
+
+
+/* Lista de classrooms */
+
+ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  list-style: none;
+  margin: 20px;
+}
+
+.classroom_card{
+  border: 1px solid #DADCE0;
+  border-radius: 8px;
+  height: 300px;
+  color: #fff;
+  position: relative;
+}
+
+.classroom_card h1{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.card_header{
+  background-color: #566E7A;
+  padding: 20px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.title_container{
+  display: block;
+  height: 60px;
+  width: 225px;
+  
+}
+
+.title_container h1{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+}
+
+ul li button{
+  position: absolute;
+  right:24px;
+  top: 24px;
+  border: 0;
+  transition: opacity 0.2s;
+  background-color: transparent;
+}
+
+/* Adicionar classroom */
+
+.add_classroom{
+  position: fixed;
+  top: 32%;
+  bottom: 32%;
+  left:38%;
+  right: 38%;
+  border: 1px solid #DADCE0;
+  border-radius: 8px;
+  z-index: 4;
+  background-color: #fff;
+  padding: 25px;
+}
+
+.add_classroom p{
+  color:#5F6368;
+}
+
+.add_classroom .add_classroom_title{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.add_classroom button{
+  border: none;
+}
+
+.add_classroom .add_classroom_title p{
+  font-size: 16px;
+  font-weight: 250;
+}
+
+.add_classroom .add_classroom_input{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #5F6368;
+  margin-top: 40px;
+  padding: 5px;
+  color: #5F6368;
+}
+
+.add_classroom .add_classroom_input_blue{
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #287AE6;
+  margin-top: 55px;
+  padding: 5px;
+  color: #5F6368;
+}
+
+.add_classroom .button_container{
+  text-align: right;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.invisible{
+  visibility: hidden;
+  height: 1px;
+}
+
+/* Responsividade */
+
+@media(max-width: 1250px){
+  ul{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+}
+
+@media(max-width: 1000px){
+  ul{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .add_classroom{
+    position: fixed;
+    top: 25%;
+    bottom: 25%;
+    left:30%;
+    right: 30%;
+    border: 1px solid #DADCE0;
+    border-radius: 8px;
+    z-index: 4;
+    background-color: #eee;
+    padding: 25px;
+  }
+}
+
+@media(max-width: 700px){
+  ul{
+    grid-template-columns: 1fr;
+  }
+
+  .add_classroom{
+    position: fixed;
+    top: 32%;
+    bottom: 32%;
+    left:20%;
+    right: 20%;
+    border: 1px solid #DADCE0;
+    border-radius: 8px;
+    z-index: 4;
+    background-color: #eee;
+    padding: 25px;
+  }
+
+  .add_classroom p{
+    font-size: 14px;
+  }
+}

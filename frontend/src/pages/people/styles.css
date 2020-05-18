@@ -1,0 +1,40 @@
+.teachers{
+  width: 100%;
+}
+
+.title{
+  width: 100%;
+  border-bottom: 1px solid #1967D2;
+  padding: 15px;
+}
+
+.title h1{
+  font-size: 32px;
+  font-weight: 500;
+  color: #1967D2;
+}
+
+.teachers ul, .students ul{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.teachers li,  .students li{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.teachers li div, .students li div{
+  display: flex;
+  align-items: center;
+}
+
+.teachers li div p, .students li div p {
+  margin-left: 20px; 
+  color: #5F6368;
+  font-weight: 500;
+}

@@ -1,0 +1,257 @@
+.classroom_header{
+  display:flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #DADCE0;
+  padding: 18px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.navigation{
+  margin-right: 30%;
+  display: flex;
+  height: 100%;
+}
+
+.navigation button{
+  height: 100%;
+  padding: 10px
+}
+
+.navigation p{
+  font-size: 14px;
+  color: #696969;
+  font-weight: 500;
+}
+
+.navigation p:hover{
+  filter: brightness(90%)
+}
+
+.navigation .button_pressed{
+  border-bottom: 4px solid #1967D2;
+}
+
+.navigation .button_pressed p{
+  font-size: 16px;
+  color: #1967D2
+}
+
+.banner{
+  border-radius: 8px;
+  background-color: #566E7A;
+  padding: 25px;
+  padding-bottom: 125px;
+  margin-bottom: 25px;
+}
+
+.banner p{
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.banner span{
+  color: #fff;
+  font-size: 18px;
+}
+
+.activities_container{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+}
+
+/* Próximas atividades */
+
+.activities_container aside{
+  border: 1px solid #DADCE0;
+  border-radius: 4px;
+  padding: 25px;
+  min-height: 170px;
+  height: fit-content;
+}
+
+.activities_container aside p{
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.activities_container aside button{
+  border: none;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.activities_container aside .none_activity{
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.activities_container aside ul{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.next_activity{
+  border: none;
+  
+}
+
+.next_activity p{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #333
+}
+
+.none_activity span{
+  font-size: 13px;
+  color: #737373
+}
+
+/* Criar comentário */
+
+.create_comment{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #DADCE0;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.create_comment p{
+  margin: 10px;
+  color: #5F6371;
+}
+
+.create_comment p:hover{
+  filter: brightness(0.9);
+}
+
+.create_comment textarea{
+  height: 100px;
+  border: none;
+  border-bottom: 2px solid #5F6368;
+  padding: 10px;
+  resize: none;
+  margin-bottom: 15px;
+}
+
+.create_comment div{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.create_comment button{
+  margin-right: 10px;
+  border: none;
+  color: #646368;
+  transition: 0.2s;
+}
+
+.create_comment button p:hover{
+  filter: brightness(0.9);
+}
+
+/* Lista de atividades */
+
+.activities_list{
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.activity {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #DADCE0;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.comment{
+  display: block;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #DADCE0;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.comment_header{
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.activity p{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.comment p{
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 15px;
+}
+
+.comment_body p{
+  font-size: 14px;
+  font-weight: 100;
+  margin-left: 0px;
+}
+
+.activity span{
+  font-size: 12px;
+  color: #636368;
+}
+
+.comment span{
+  font-size: 12px;
+  color: #636368;
+  margin-left: 15px;
+}
+
+@media(max-width:1200px ){
+  .navigation{
+    margin-right: 0px;
+  }
+}
+
+@media(max-width:1000px ){
+  .content{
+    width: 100%;
+  }
+}
+
+@media(max-width:800px ){
+  .content{
+    width: 100%;
+  }
+
+  .activities_container{
+    grid-template-columns: 1fr;
+  }
+
+  .navigation{
+    position: absolute;
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .banner{
+    margin-top: 70px;
+  }
+}
